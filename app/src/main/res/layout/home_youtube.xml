@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Home"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/imageVideo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="2:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_vid" />
+
+    <ImageView
+        android:id="@+id/icon_chanel"
+        android:layout_width="67dp"
+        android:layout_height="66dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageVideo"
+        app:srcCompat="@drawable/img_chanel" />
+
+    <ImageButton
+        android:id="@+id/icon_options"
+        android:layout_width="45dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00FFFFFF"
+        android:gravity="end"
+        android:padding="10dp"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="@id/icon_chanel"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageVideo"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_options" />
+
+    <TextView
+        android:id="@+id/NameVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:text="Programación En Android"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toStartOf="@+id/icon_options"
+        app:layout_constraintStart_toStartOf="@id/icon_chanel"
+        app:layout_constraintTop_toBottomOf="@id/icon_chanel"
+        app:layout_constraintTop_toTopOf="@id/icon_chanel" />
+
+
+    <LinearLayout
+        android:id="@+id/infoVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        app:layout_constraintStart_toStartOf="@+id/NameVideo"
+        app:layout_constraintTop_toBottomOf="@+id/NameVideo">
+
+        <TextView
+            android:id="@+id/NameChanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:text="Minudev"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:id="@+id/QuantityVisits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="330 K vistas"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:id="@+id/DateCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="hace 3 semanas"
+            android:textAlignment="viewStart" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
