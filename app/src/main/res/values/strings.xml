@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">CloneYoutube</string>
     <string name="title_activity_home_youtube">home_youtube</string>
+    <string name="name_video">Programación En Android</string>
+    <string name="nameChanel">Minudev</string>
+    <string name="Visits">330 K vistas</string>
+    <string name="DateCreation">hace 3 semanas</string>
+    <string name="NameSecondActityvity">RV Activity</string>
+    <string name="textGetVideos">Obtener videos</string>
+    <string name="TextExtractVideos">Eliminar Video</string>
+    <string name="textEditVideos">Editar videos</string>
 </resources>

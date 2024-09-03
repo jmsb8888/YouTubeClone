@@ -55,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="7dp"
-        android:text="Programación En Android"
+        android:text="@string/name_video"
         android:textAlignment="viewStart"
         app:layout_constraintEnd_toStartOf="@+id/icon_options"
         app:layout_constraintStart_toStartOf="@id/icon_chanel"
@@ -80,7 +80,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="0dp"
-            android:text="Minudev"
+            android:text="@string/nameChanel"
             android:textAlignment="viewStart" />
 
         <TextView
@@ -88,7 +88,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="330 K vistas"
+            android:text="@string/Visits"
             android:textAlignment="viewStart" />
 
         <TextView
@@ -96,7 +96,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="hace 3 semanas"
+            android:text="@string/DateCreation"
             android:textAlignment="viewStart" />
     </LinearLayout>
 

@@ -11,7 +11,7 @@
         android:id="@+id/btnGetVideos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Obtener videos"
+        android:text="@string/textGetVideos"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -19,7 +19,7 @@
         android:id="@+id/btnDeleteVideos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Eliminar Video"
+        android:text="@string/TextExtractVideos"
         app:layout_constraintStart_toEndOf="@+id/btnGetVideos"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,7 +28,7 @@
         android:id="@+id/btnEditVideos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Editar videos"
+        android:text="@string/textEditVideos"
         app:layout_constraintStart_toEndOf="@+id/btnDeleteVideos"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
