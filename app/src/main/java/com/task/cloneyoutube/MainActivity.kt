@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         AddDataVideo()
         addVideos()
     }
-
+/// comentario de pruebas uso git
     private fun AddDataVideo() {
         for (i in 0 until 10) {
             listVideos.add(NameChanel("Canal $i", "${i+300} k vistas", "hace $i semanas"))
