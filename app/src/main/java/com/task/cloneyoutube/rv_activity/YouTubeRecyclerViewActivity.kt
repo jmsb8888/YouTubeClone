@@ -63,7 +63,7 @@ class YouTubeRecyclerViewActivity: AppCompatActivity() {
     }
 
     private fun AddDataVideo() {
-        for (i in 0 until 4) {
+        for (i in 0 until 10) {
             listVideos.add(NameChanel("Canal $i", "${i + 300} k vistas", "hace $i semanas"))
         }
     }

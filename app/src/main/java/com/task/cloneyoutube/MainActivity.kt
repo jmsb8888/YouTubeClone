@@ -2,10 +2,13 @@ package com.task.cloneyoutube
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.material3.Button
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.platform.ComposeView
 import com.task.cloneyoutube.rv_activity.YouTubeRecyclerViewActivity
 
 class MainActivity : AppCompatActivity() {
@@ -44,8 +47,21 @@ class MainActivity : AppCompatActivity() {
 
     private fun initViews() {
         secuence_videos = findViewById(R.id.ll_videos)
-        findViewById<Button>(R.id.btn_home_youtube_rv).setOnClickListener {
-            startActivity(Intent(this, YouTubeRecyclerViewActivity::class.java))
+        val composeButton = findViewById<ComposeView>(R.id.compose_view)
+        composeButton.setContent {
+            ComposeButton()
         }
+
     }
+
+    @Composable
+    private fun ComposeButton() {
+        Button (onClick = {
+            startActivity(Intent(this, YouTubeRecyclerViewActivity::class.java))
+        },
+        content = {
+            Text(text = "Ir a RV")
+        })
+    }
+
 }
